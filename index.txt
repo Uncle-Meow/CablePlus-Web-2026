@@ -793,7 +793,7 @@
                     <input type="hidden" name="_subject" value="Nueva solicitud de CablePlus">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" id="paquete" name="paquete">
-                    <input type="hidden" name="_next" value="https://uncle-meow.github.io/CablePlus-Web-2026/gracias-solicitud.html">
+                    <input type="hidden" name="_next" value="https://www.cableplus.co/gracias-solicitud.html">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="_honey" style="display:none">
                     
@@ -836,7 +836,7 @@
                 <form id="formulario-sugerencias" action="https://formsubmit.co/infocableplus@gmail.com" method="POST">
                     <input type="hidden" name="_subject" value="Nueva Sugerencia para CablePlus">
                     <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_next" value="https://uncle-meow.github.io/CablePlus-Web-2026/gracias-sugerencia.html">
+                    <input type="hidden" name="_next" value="https://www.cableplus.co/gracias-sugerencia.html">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="_honey" style="display:none">
                     
