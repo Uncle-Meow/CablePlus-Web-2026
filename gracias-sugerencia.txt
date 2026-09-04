@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias por tu feedback! - CablePlus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        :root {
+            --naranja: #FF9800;
+            --rojo: #FF5722;
+            --degradado: linear-gradient(135deg, #FF9800 0%, #FF5722 100%);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        
+        .contenedor-gracias {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+            width: 90%;
+            text-align: center;
+            animation: aparecer 0.8s ease-out;
+        }
+        
+        @keyframes aparecer {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .icono-gracias {
+            font-size: 5rem;
+            color: var(--naranja);
+            margin-bottom: 20px;
+            animation: latido 1.5s infinite;
+        }
+        
+        @keyframes latido {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        h1 {
+            color: var(--rojo);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .valoramos {
+            display: inline-block;
+            background: var(--degradado);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        
+        .btn-volver {
+            display: inline-block;
+            background: var(--degradado);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-volver:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .contenedor-gracias {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            p {
+                font-size: 1.1rem;
+            }
+            
+            .icono-gracias {
+                font-size: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    
+    <div class="contenedor-gracias">
+        <div class="icono-gracias">
+            <i class="fas fa-heart"></i>
+        </div>
+        
+        <h1>¡Gracias por tu sugerencia!</h1>
+        
+        <div class="valoramos">
+            Tu opinión nos importa
+        </div>
+        
+        <p>Hemos recibido tu comentario y lo valoramos profundamente.</p>
+        
+        <p>En CablePlus estamos comprometidos con la mejora continua, y feedback como el tuyo nos ayuda a crecer y ofrecer un mejor servicio.</p>
+        
+        <p><strong>¿Qué haremos con tu sugerencia?</strong></p>
+        <ul style="text-align: left; display: inline-block; margin: 0 auto;">
+            <li>La revisará nuestro equipo de mejora continua</li>
+            <li>Evaluaremos su implementación</li>
+            <li>Nos pondremos en contacto si necesitamos más detalles</li>
+        </ul>
+        
+        <a href="index.html" class="btn-volver">
+            <i class="fas fa-home"></i> Volver al inicio
+        </a>
+    </div>
+</body>
+</html>
